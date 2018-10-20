@@ -45,4 +45,4 @@ app.listen(port, () => {
 });
 
 
-module.exports.bcrypt = bcrypt;
+//module.exports.bcrypt = bcrypt;
