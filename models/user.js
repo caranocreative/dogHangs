@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const findOrCreate = require("mongoose-findorcreate");
 const Schema = mongoose.Schema;
-const bcrypt = require("bcrypt");
+const bcrypt = require("../server.js").bcrypt;
 
 const UserSchema = new mongoose.Schema({
 	username: {type: String, unique: true},

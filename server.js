@@ -14,7 +14,6 @@ require("./passport/serialize.js");
 require("./passport/local-config.js");
 require("./passport/google-config.js");
 
-
 const methodOverride = require('method-override');
 
 require('./db/db');
@@ -44,3 +43,6 @@ const port = process.env.PORT || 3000
 app.listen(port, () => {
     console.log("Howdy Cowboy");
 });
+
+
+module.exports.bcrypt = bcrypt;
